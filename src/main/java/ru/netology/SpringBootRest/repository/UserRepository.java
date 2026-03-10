@@ -2,7 +2,6 @@ package ru.netology.SpringBootRest.repository;
 
 import org.springframework.stereotype.Repository;
 import ru.netology.SpringBootRest.services.Authorities;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,8 +11,11 @@ public class UserRepository {
 
         List<Authorities> tmpAuthorities = new ArrayList<>();
 
-        if (user.equals("adm") && password.equals("1234")) {tmpAuthorities.add(Authorities.WRITE); tmpAuthorities.add(Authorities.READ);}
+        if (user.equals("adm") && password.equals("1234")) {
+            tmpAuthorities.add(Authorities.WRITE);
+            tmpAuthorities.add(Authorities.READ);
+        }
 
-        return  tmpAuthorities;
+        return tmpAuthorities;
     }
 }
