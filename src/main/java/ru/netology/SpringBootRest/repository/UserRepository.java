@@ -2,6 +2,7 @@ package ru.netology.SpringBootRest.repository;
 
 import org.springframework.stereotype.Repository;
 import ru.netology.SpringBootRest.services.Authorities;
+
 import java.util.ArrayList;
 import java.util.List;
 
