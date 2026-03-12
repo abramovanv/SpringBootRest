@@ -1,0 +1,7 @@
+version: '1.0'
+
+services:
+  spring_boot_rest:
+    image: 'myapp:1.0'
+    ports:
+      - "8081:8080"
